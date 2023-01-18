@@ -1,0 +1,52 @@
+.App {
+  text-align: center;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.wrapper{
+  padding: 30px;
+}
+
+.results-wrapper{
+  padding: 20px;
+}
+
+.error-message{
+  color: red;
+}
+
+.search-label{
+  font-family: arial, sans-serif;
+  font-weight: bold;
+  text-align: left;
+  padding: 8px;
+}
+
+.search-results-title{
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.search-fetching{
+  color: blue;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}

@@ -50,8 +50,18 @@ function App() {
         });
 
         //parse datetime and generate a proper data record
+        //dates are parsed as UTC and displayed using the browser's TZ
+
         const newRecords = records.map((val: any) => [
-          new Date(val[0], val[1], val[2], val[3], val[4]),
+          new Date(
+            Date.UTC(
+              parseInt(val[0]),
+              parseInt(val[1])-1,
+              parseInt(val[2]),
+              parseInt(val[3]),
+              parseInt(val[4])
+            )
+          ),
           val[5],
           val[6],
           val[7],
